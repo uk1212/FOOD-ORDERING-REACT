@@ -1,14 +1,12 @@
 import React from "react";
 import ReactDOM  from "react-dom/client";
-// Default Import
+//Default import
 import Header from "./components/Header";
 import Body from "./components/Body";
 import Footer from "./components/Footer";
-
 //Named Import
-// import Header,{Title} from "./components/Header";
-// import {Title,Header} from "./components/Header";
-// import * as xyz from "./components/Header";
+// import { Title } from "./components/Header";
+
 
 /*
       Header
@@ -40,6 +38,12 @@ const heading = React.createElement(
 // 1. Functional Component-->Name of component starts with capital letter
 // 2. Class Component
 // React.Fragment
+
+
+
+
+
+
 const AppLayout = () => {
   return (
     <>
@@ -50,6 +54,7 @@ const AppLayout = () => {
   );
 };
 
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
-// root.render(<HeaderComponent />);
+// root.render(<Header />);
 root.render(<AppLayout />);

@@ -1,618 +1,1010 @@
-export const IMG_CDN_URL ="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/" ;
+ export const IMG_CDN_URL="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/" ;
 
-// Config Driven UI
- export const restaurantList = [
+  export const restaurantList=[
+  
     {
-      type: "restaurant",
-      data: {
-        type: "F",
-        id: "374852",
-        name: "Sky Lodge Restro Bar And Pub",
-        uuid: "389f77d2-e66c-4a34-a65f-824af3e66209",
-        city: "208",
-        area: "Bengaluru    Honnavar Road",
-        totalRatingsString: "50+ ratings",
-        cloudinaryImageId: "x7mgrqfrduud7lhm6gzj",
-        cuisines: ["Desserts", "Chinese", "North Indian", "Biryani"],
-        tags: [],
-        costForTwo: 20000,
-        costForTwoString: "₹200 FOR TWO",
-        deliveryTime: 16,
-        minDeliveryTime: 16,
-        maxDeliveryTime: 16,
-        slaString: "16 MINS",
-        lastMileTravel: 0.30000001192092896,
-        slugs: {
-          restaurant: "1625-resto-pub-kotitopu-kotitopu",
-          city: "tumakuru",
-        },
-        cityState: "208",
-        address:
-          "SKY LODGE GILLY'S RESTO BAR AND PUB 2,3 AND 4TH FLOOR, BH ROAD, BATWADI, TUMKUR",
-        locality: "Kotitopu",
-        parentId: 316916,
-        unserviceable: false,
-        veg: false,
-        select: false,
-        favorite: false,
-        tradeCampaignHeaders: [],
-        aggregatedDiscountInfo: {
-          header: "50% off",
-          shortDescriptionList: [
-            {
-              meta: "50% off | Use WELCOME50",
-              discountType: "Percentage",
-              operationType: "RESTAURANT",
-            },
+      "cardType": "restaurant",
+      "layoutAlignmentType": "VERTICAL",
+      "data": {
+        "type": "restaurant",
+        "data": {
+          "type": "F",
+          "id": "680245",
+          "name": "New Udupi Grand",
+          "uuid": "0ae049ac-4cb0-45cb-813e-15c33ee8c9ea",
+          "city": "208",
+          "area": "Kotitopu",
+          "totalRatingsString": "Too Few Ratings",
+          "cloudinaryImageId": "e565c4ad2e3450129c54c8d333557bdc",
+          "cuisines": [
+            "North Indian",
+            "Chinese",
+            "Snacks",
+            "Beverages"
           ],
-          descriptionList: [
-            {
-              meta: "50% off up to ₹80 | Use code WELCOME50",
-              discountType: "Percentage",
-              operationType: "RESTAURANT",
-            },
+          "tags": [
+            
           ],
-          subHeader: "",
-          headerType: 0,
-          superFreedel: "",
-        },
-        aggregatedDiscountInfoV2: {
-          header: "50% OFF",
-          shortDescriptionList: [
-            {
-              meta: "Use WELCOME50",
-              discountType: "Percentage",
-              operationType: "RESTAURANT",
-            },
+          "costForTwo": 25000,
+          "costForTwoString": "₹250 FOR TWO",
+          "deliveryTime": 22,
+          "minDeliveryTime": 22,
+          "maxDeliveryTime": 22,
+          "slaString": "22 MINS",
+          "lastMileTravel": 3.9000000953674316,
+          "slugs": {
+            "restaurant": "new-udupi-grand-kotitopu-kotitopu",
+            "city": "tumakuru"
+          },
+          "cityState": "208",
+          "address": "WARD NO-18,SRI BASAVESHWARA ROAD, TUMKUR,Tumkur,karnataka-572101",
+          "locality": "Sri Basaveshwara Road",
+          "parentId": 7443,
+          "unserviceable": false,
+          "veg": false,
+          "select": false,
+          "favorite": false,
+          "tradeCampaignHeaders": [
+            
           ],
-          descriptionList: [
-            {
-              meta: "50% off up to ₹80 | Use code WELCOME50",
-              discountType: "Percentage",
-              operationType: "RESTAURANT",
-            },
+          "aggregatedDiscountInfo": {
+            "header": "10% off",
+            "shortDescriptionList": [
+              {
+                "meta": "10% off | Use TRYNEW",
+                "discountType": "Percentage",
+                "operationType": "RESTAURANT"
+              }
+            ],
+            "descriptionList": [
+              {
+                "meta": "10% off up to ₹40 | Use code TRYNEW",
+                "discountType": "Percentage",
+                "operationType": "RESTAURANT"
+              }
+            ],
+            "subHeader": "",
+            "headerType": 0,
+            "superFreedel": ""
+          },
+          "aggregatedDiscountInfoV2": {
+            "header": "10% OFF",
+            "shortDescriptionList": [
+              {
+                "meta": "Use TRYNEW",
+                "discountType": "Percentage",
+                "operationType": "RESTAURANT"
+              }
+            ],
+            "descriptionList": [
+              {
+                "meta": "10% off up to ₹40 | Use code TRYNEW",
+                "discountType": "Percentage",
+                "operationType": "RESTAURANT"
+              }
+            ],
+            "subHeader": "",
+            "headerType": 0,
+            "superFreedel": ""
+          },
+          "chain": [
+            
           ],
-          subHeader: "",
-          headerType: 0,
-          superFreedel: "",
+          "feeDetails": {
+            "fees": [
+              {
+                "name": "distance",
+                "fee": 1400,
+                "message": ""
+              },
+              {
+                "name": "time",
+                "fee": 0,
+                "message": ""
+              },
+              {
+                "name": "special",
+                "fee": 0,
+                "message": ""
+              }
+            ],
+            "totalFees": 1400,
+            "message": "",
+            "title": "Delivery Charge",
+            "amount": "1400",
+            "icon": ""
+          },
+          "availability": {
+            "opened": true,
+            "nextOpenMessage": "",
+            "nextCloseMessage": ""
+          },
+          "longDistanceEnabled": 0,
+          "rainMode": "NONE",
+          "thirdPartyAddress": false,
+          "thirdPartyVendor": "",
+          "adTrackingID": "",
+          "badges": {
+            "imageBased": [
+              
+            ],
+            "textBased": [
+              
+            ],
+            "textExtendedBadges": [
+              
+            ]
+          },
+          "lastMileTravelString": "3.9 kms",
+          "hasSurge": false,
+          "sla": {
+            "restaurantId": "680245",
+            "deliveryTime": 22,
+            "minDeliveryTime": 22,
+            "maxDeliveryTime": 22,
+            "lastMileTravel": 3.9000000953674316,
+            "lastMileDistance": 0,
+            "serviceability": "SERVICEABLE",
+            "rainMode": "NONE",
+            "longDistance": "NOT_LONG_DISTANCE",
+            "preferentialService": false,
+            "iconType": "EMPTY"
+          },
+          "promoted": false,
+          "avgRating": "--",
+          "totalRatings": 0,
+          "new": true
         },
-        chain: [],
-        feeDetails: {
-          fees: [],
-          totalFees: 0,
-          message: "",
-          title: "",
-          amount: "",
-          icon: "",
-        },
-        availability: {
-          opened: true,
-          nextOpenMessage: "",
-          nextCloseMessage: "",
-        },
-        longDistanceEnabled: 0,
-        rainMode: "NONE",
-        thirdPartyAddress: false,
-        thirdPartyVendor: "",
-        adTrackingID: "",
-        badges: {
-          imageBased: [],
-          textBased: [],
-          textExtendedBadges: [],
-        },
-        lastMileTravelString: "0.3 kms",
-        hasSurge: false,
-        sla: {
-          restaurantId: "374852",
-          deliveryTime: 16,
-          minDeliveryTime: 16,
-          maxDeliveryTime: 16,
-          lastMileTravel: 0.30000001192092896,
-          lastMileDistance: 0,
-          serviceability: "SERVICEABLE",
-          rainMode: "NONE",
-          longDistance: "NOT_LONG_DISTANCE",
-          preferentialService: false,
-          iconType: "EMPTY",
-        },
-        promoted: false,
-        avgRating: "3.9",
-        totalRatings: 50,
-        new: false,
+        "subtype": "basic"
       },
-      subtype: "basic",
+      "parentWidget": false
     },
     {
-      type: "restaurant",
-      data: {
-        type: "F",
-        id: "172076",
-        name: "Hydarabadi Chicken Dum Biryani",
-        uuid: "701bec7c-b57e-4944-baf0-452ac5ffb161",
-        city: "208",
-        area: "Upparhalli",
-        totalRatingsString: "Too Few Ratings",
-        cloudinaryImageId: "pbsgdluxqujinglsiwur",
-        cuisines: ["Biryani", "North Indian", "Chinese"],
-        tags: [],
-        costForTwo: 20000,
-        costForTwoString: "₹200 FOR TWO",
-        deliveryTime: 12,
-        minDeliveryTime: 12,
-        maxDeliveryTime: 12,
-        slaString: "12 MINS",
-        lastMileTravel: 0.5,
-        slugs: {
-          restaurant: "hydarabadi-chicken-dum-biryani-tumkur-tumakuru",
-          city: "tumakuru",
-        },
-        cityState: "208",
-        address:
-          "Gangotri Rd, Sri Krishna Nagar, Siddalingaiahna Palya, Tumakuru, Karnataka 572103",
-        locality: "TGangotrinagar",
-        parentId: 105039,
-        unserviceable: false,
-        veg: false,
-        select: false,
-        favorite: false,
-        tradeCampaignHeaders: [],
-        aggregatedDiscountInfo: {
-          header: "50% off",
-          shortDescriptionList: [
-            {
-              meta: "50% off | Use WELCOME50",
-              discountType: "Percentage",
-              operationType: "RESTAURANT",
-            },
+      "cardType": "restaurant",
+      "layoutAlignmentType": "VERTICAL",
+      "data": {
+        "type": "restaurant",
+        "data": {
+          "type": "F",
+          "id": "437638",
+          "name": "Sri Ganesh Bakery",
+          "uuid": "d8f59dd9-36d9-4b8d-a48b-8d6d24bbf77c",
+          "city": "208",
+          "area": "Kotitopu",
+          "totalRatingsString": "100+ ratings",
+          "cloudinaryImageId": "x0lvsktg8mdblcykdaa8",
+          "cuisines": [
+            "Bakery"
           ],
-          descriptionList: [
-            {
-              meta: "50% off up to ₹80 | Use code WELCOME50",
-              discountType: "Percentage",
-              operationType: "RESTAURANT",
-            },
+          "tags": [
+            
           ],
-          subHeader: "",
-          headerType: 0,
-          superFreedel: "",
-        },
-        aggregatedDiscountInfoV2: {
-          header: "50% OFF",
-          shortDescriptionList: [
-            {
-              meta: "Use WELCOME50",
-              discountType: "Percentage",
-              operationType: "RESTAURANT",
-            },
+          "costForTwo": 10000,
+          "costForTwoString": "₹100 FOR TWO",
+          "deliveryTime": 24,
+          "minDeliveryTime": 24,
+          "maxDeliveryTime": 24,
+          "slaString": "24 MINS",
+          "lastMileTravel": 4,
+          "slugs": {
+            "restaurant": "shree-ganesh-bakery-kotitopu-kotitopu",
+            "city": "tumakuru"
+          },
+          "cityState": "208",
+          "address": "Oil mill road, mandipete Tumkur-572101",
+          "locality": "Oil Mill Road",
+          "parentId": 269399,
+          "unserviceable": false,
+          "veg": false,
+          "select": false,
+          "favorite": false,
+          "tradeCampaignHeaders": [
+            
           ],
-          descriptionList: [
-            {
-              meta: "50% off up to ₹80 | Use code WELCOME50",
-              discountType: "Percentage",
-              operationType: "RESTAURANT",
-            },
+          "aggregatedDiscountInfo": {
+            "header": "10% off",
+            "shortDescriptionList": [
+              {
+                "meta": "10% off | Use TRYNEW",
+                "discountType": "Percentage",
+                "operationType": "RESTAURANT"
+              }
+            ],
+            "descriptionList": [
+              {
+                "meta": "10% off up to ₹40 | Use code TRYNEW",
+                "discountType": "Percentage",
+                "operationType": "RESTAURANT"
+              }
+            ],
+            "subHeader": "",
+            "headerType": 0,
+            "superFreedel": ""
+          },
+          "aggregatedDiscountInfoV2": {
+            "header": "10% OFF",
+            "shortDescriptionList": [
+              {
+                "meta": "Use TRYNEW",
+                "discountType": "Percentage",
+                "operationType": "RESTAURANT"
+              }
+            ],
+            "descriptionList": [
+              {
+                "meta": "10% off up to ₹40 | Use code TRYNEW",
+                "discountType": "Percentage",
+                "operationType": "RESTAURANT"
+              }
+            ],
+            "subHeader": "",
+            "headerType": 0,
+            "superFreedel": ""
+          },
+          "chain": [
+            
           ],
-          subHeader: "",
-          headerType: 0,
-          superFreedel: "",
+          "feeDetails": {
+            "fees": [
+              {
+                "name": "distance",
+                "fee": 1900,
+                "message": ""
+              },
+              {
+                "name": "time",
+                "fee": 0,
+                "message": ""
+              },
+              {
+                "name": "special",
+                "fee": 0,
+                "message": ""
+              }
+            ],
+            "totalFees": 1900,
+            "message": "",
+            "title": "Delivery Charge",
+            "amount": "1900",
+            "icon": ""
+          },
+          "availability": {
+            "opened": true,
+            "nextOpenMessage": "",
+            "nextCloseMessage": ""
+          },
+          "longDistanceEnabled": 0,
+          "rainMode": "NONE",
+          "thirdPartyAddress": false,
+          "thirdPartyVendor": "",
+          "adTrackingID": "",
+          "badges": {
+            "imageBased": [
+              
+            ],
+            "textBased": [
+              
+            ],
+            "textExtendedBadges": [
+              
+            ]
+          },
+          "lastMileTravelString": "4 kms",
+          "hasSurge": false,
+          "sla": {
+            "restaurantId": "437638",
+            "deliveryTime": 24,
+            "minDeliveryTime": 24,
+            "maxDeliveryTime": 24,
+            "lastMileTravel": 4,
+            "lastMileDistance": 0,
+            "serviceability": "SERVICEABLE",
+            "rainMode": "NONE",
+            "longDistance": "NOT_LONG_DISTANCE",
+            "preferentialService": false,
+            "iconType": "EMPTY"
+          },
+          "promoted": false,
+          "avgRating": "3.6",
+          "totalRatings": 100,
+          "new": false
         },
-        chain: [],
-        feeDetails: {
-          fees: [],
-          totalFees: 0,
-          message: "",
-          title: "",
-          amount: "",
-          icon: "",
-        },
-        availability: {
-          opened: true,
-          nextOpenMessage: "",
-          nextCloseMessage: "",
-        },
-        longDistanceEnabled: 0,
-        rainMode: "NONE",
-        thirdPartyAddress: false,
-        thirdPartyVendor: "",
-        adTrackingID: "",
-        badges: {
-          imageBased: [],
-          textBased: [],
-          textExtendedBadges: [],
-        },
-        lastMileTravelString: "0.5 kms",
-        hasSurge: false,
-        sla: {
-          restaurantId: "172076",
-          deliveryTime: 12,
-          minDeliveryTime: 12,
-          maxDeliveryTime: 12,
-          lastMileTravel: 0.5,
-          lastMileDistance: 0,
-          serviceability: "SERVICEABLE",
-          rainMode: "NONE",
-          longDistance: "NOT_LONG_DISTANCE",
-          preferentialService: false,
-          iconType: "EMPTY",
-        },
-        promoted: false,
-        avgRating: "--",
-        totalRatings: 0,
-        new: false,
+        "subtype": "basic"
       },
-      subtype: "basic",
+      "parentWidget": false
     },
     {
-      type: "restaurant",
-      data: {
-        type: "F",
-        id: "155664",
-        name: "Domino's Pizza",
-        uuid: "b5039c27-7ad2-4828-b4e0-372711d302ad",
-        city: "208",
-        area: "Chandana Complex",
-        totalRatingsString: "50+ ratings",
-        cloudinaryImageId: "qkidodhdd85s6cuekprx",
-        cuisines: ["Pizzas"],
-        tags: [],
-        costForTwo: 40000,
-        costForTwoString: "₹400 FOR TWO",
-        deliveryTime: 45,
-        minDeliveryTime: 45,
-        maxDeliveryTime: 45,
-        slaString: "45 MINS",
-        lastMileTravel: 0,
-        slugs: {
-          restaurant: "dominos-pizza-tumkur-test_area-tumakuru",
-          city: "tumakuru",
-        },
-        cityState: "208",
-        address:
-          "MaharajaSquareNo2627,435,2536,4961,GroundFloor,BatawadiBangaloreTumkurRoadTumkur572103",
-        locality: "TUMKUR",
-        parentId: 2456,
-        unserviceable: false,
-        veg: false,
-        select: false,
-        favorite: false,
-        tradeCampaignHeaders: [],
-        aggregatedDiscountInfo: {
-          header: "50% off",
-          shortDescriptionList: [
-            {
-              meta: "50% off | Use WELCOME50",
-              discountType: "Percentage",
-              operationType: "RESTAURANT",
-            },
+      "cardType": "restaurant",
+      "layoutAlignmentType": "VERTICAL",
+      "data": {
+        "type": "restaurant",
+        "data": {
+          "type": "F",
+          "id": "462228",
+          "name": "Samruddhi Grand",
+          "uuid": "c7e49f66-4c17-4cef-92ac-b6dd70d7b7a9",
+          "city": "208",
+          "area": "Kotitopu",
+          "totalRatingsString": "20+ ratings",
+          "cloudinaryImageId": "jym2mpij4i0cvxplbzf9",
+          "cuisines": [
+            "North Indian",
+            "South Indian"
           ],
-          descriptionList: [
-            {
-              meta: "50% off up to ₹80 | Use code WELCOME50",
-              discountType: "Percentage",
-              operationType: "RESTAURANT",
-            },
+          "tags": [
+            
           ],
-          subHeader: "",
-          headerType: 0,
-          superFreedel: "",
-        },
-        aggregatedDiscountInfoV2: {
-          header: "50% OFF",
-          shortDescriptionList: [
-            {
-              meta: "Use WELCOME50",
-              discountType: "Percentage",
-              operationType: "RESTAURANT",
-            },
+          "costForTwo": 20000,
+          "costForTwoString": "₹200 FOR TWO",
+          "deliveryTime": 24,
+          "minDeliveryTime": 24,
+          "maxDeliveryTime": 24,
+          "slaString": "24 MINS",
+          "lastMileTravel": 4.300000190734863,
+          "slugs": {
+            "restaurant": "samruddhi-grand-kotitopu-kotitopu",
+            "city": "tumakuru"
+          },
+          "cityState": "208",
+          "address": "Bhagvan mahaveer cgoutry opp, Railwaystation road, Tumkur-572101",
+          "locality": "Bhagvan Mahaveer Cgoutry",
+          "parentId": 176702,
+          "unserviceable": false,
+          "veg": true,
+          "select": false,
+          "favorite": false,
+          "tradeCampaignHeaders": [
+            
           ],
-          descriptionList: [
-            {
-              meta: "50% off up to ₹80 | Use code WELCOME50",
-              discountType: "Percentage",
-              operationType: "RESTAURANT",
-            },
+          "aggregatedDiscountInfo": {
+            "header": "20% off",
+            "shortDescriptionList": [
+              {
+                "meta": "20% off | Use TRYNEW",
+                "discountType": "Percentage",
+                "operationType": "RESTAURANT"
+              }
+            ],
+            "descriptionList": [
+              {
+                "meta": "20% off up to ₹50 | Use code TRYNEW",
+                "discountType": "Percentage",
+                "operationType": "RESTAURANT"
+              }
+            ],
+            "subHeader": "",
+            "headerType": 0,
+            "superFreedel": ""
+          },
+          "aggregatedDiscountInfoV2": {
+            "header": "20% OFF",
+            "shortDescriptionList": [
+              {
+                "meta": "Use TRYNEW",
+                "discountType": "Percentage",
+                "operationType": "RESTAURANT"
+              }
+            ],
+            "descriptionList": [
+              {
+                "meta": "20% off up to ₹50 | Use code TRYNEW",
+                "discountType": "Percentage",
+                "operationType": "RESTAURANT"
+              }
+            ],
+            "subHeader": "",
+            "headerType": 0,
+            "superFreedel": ""
+          },
+          "chain": [
+            
           ],
-          subHeader: "",
-          headerType: 0,
-          superFreedel: "",
+          "feeDetails": {
+            "fees": [
+              {
+                "name": "distance",
+                "fee": 1900,
+                "message": ""
+              },
+              {
+                "name": "time",
+                "fee": 0,
+                "message": ""
+              },
+              {
+                "name": "special",
+                "fee": 0,
+                "message": ""
+              }
+            ],
+            "totalFees": 1900,
+            "message": "",
+            "title": "Delivery Charge",
+            "amount": "1900",
+            "icon": ""
+          },
+          "availability": {
+            "opened": true,
+            "nextOpenMessage": "",
+            "nextCloseMessage": ""
+          },
+          "longDistanceEnabled": 0,
+          "rainMode": "NONE",
+          "thirdPartyAddress": false,
+          "thirdPartyVendor": "",
+          "adTrackingID": "",
+          "badges": {
+            "imageBased": [
+              
+            ],
+            "textBased": [
+              
+            ],
+            "textExtendedBadges": [
+              
+            ]
+          },
+          "lastMileTravelString": "4.3 kms",
+          "hasSurge": false,
+          "sla": {
+            "restaurantId": "462228",
+            "deliveryTime": 24,
+            "minDeliveryTime": 24,
+            "maxDeliveryTime": 24,
+            "lastMileTravel": 4.300000190734863,
+            "lastMileDistance": 0,
+            "serviceability": "SERVICEABLE",
+            "rainMode": "NONE",
+            "longDistance": "NOT_LONG_DISTANCE",
+            "preferentialService": false,
+            "iconType": "EMPTY"
+          },
+          "promoted": false,
+          "avgRating": "3.9",
+          "totalRatings": 20,
+          "new": false
         },
-        chain: [],
-        feeDetails: {
-          fees: [],
-          totalFees: 0,
-          message: "",
-          title: "",
-          amount: "",
-          icon: "",
-        },
-        availability: {
-          opened: true,
-          nextOpenMessage: "",
-          nextCloseMessage: "",
-        },
-        longDistanceEnabled: 0,
-        rainMode: "NONE",
-        thirdPartyAddress: false,
-        thirdPartyVendor: "",
-        adTrackingID: "",
-        badges: {
-          imageBased: [],
-          textBased: [],
-          textExtendedBadges: [],
-        },
-        hasSurge: false,
-        sla: {
-          restaurantId: "155664",
-          deliveryTime: 45,
-          minDeliveryTime: 45,
-          maxDeliveryTime: 45,
-          lastMileTravel: 0,
-          lastMileDistance: 0,
-          serviceability: "SERVICEABLE",
-          rainMode: "NONE",
-          longDistance: "NOT_LONG_DISTANCE",
-          preferentialService: false,
-          iconType: "EMPTY",
-        },
-        promoted: false,
-        avgRating: "4.0",
-        totalRatings: 50,
-        new: false,
+        "subtype": "basic"
       },
-      subtype: "basic",
+      "parentWidget": false
     },
     {
-      type: "restaurant",
-      data: {
-        type: "F",
-        id: "377944",
-        name: "Agamana veg Restaurant",
-        uuid: "b18edc0e-683e-49e1-8689-192fa6c48dfd",
-        city: "208",
-        area: "Csi Layout",
-        totalRatingsString: "100+ ratings",
-        cloudinaryImageId: "qkwgsl5jhsyhppkzq5wy",
-        cuisines: [
-          "Desserts",
-          "Chinese",
-          "North Indian",
-          "South Indian",
-          "Ice Cream",
-          "Biryani",
-        ],
-        tags: [],
-        costForTwo: 10000,
-        costForTwoString: "₹100 FOR TWO",
-        deliveryTime: 18,
-        minDeliveryTime: 18,
-        maxDeliveryTime: 18,
-        slaString: "18 MINS",
-        lastMileTravel: 3,
-        slugs: {
-          restaurant: "agamana-veg-restaurant-kotitopu-kotitopu",
-          city: "tumakuru",
-        },
-        cityState: "208",
-        address: "BH, ROAD, TUMKUR",
-        locality: "Kotitopu",
-        parentId: 27529,
-        unserviceable: false,
-        veg: true,
-        select: false,
-        favorite: false,
-        tradeCampaignHeaders: [],
-        aggregatedDiscountInfo: {
-          header: "60% off",
-          shortDescriptionList: [
-            {
-              meta: "60% off | Use TRYNEW",
-              discountType: "Percentage",
-              operationType: "RESTAURANT",
-            },
+      "cardType": "restaurant",
+      "layoutAlignmentType": "VERTICAL",
+      "data": {
+        "type": "restaurant",
+        "data": {
+          "type": "F",
+          "id": "568032",
+          "name": "Sri Veerabhadraswamy Tiffen Centre",
+          "uuid": "48765a1c-0c52-4a89-870b-fccf856dcf5b",
+          "city": "208",
+          "area": "Kotitopu",
+          "totalRatingsString": "Too Few Ratings",
+          "cloudinaryImageId": "domfllcr4mfxfey00jyi",
+          "cuisines": [
+            "South Indian"
           ],
-          descriptionList: [
-            {
-              meta: "60% off up to ₹120 | Use code TRYNEW",
-              discountType: "Percentage",
-              operationType: "RESTAURANT",
-            },
+          "tags": [
+            
           ],
-          subHeader: "",
-          headerType: 0,
-          superFreedel: "",
-        },
-        aggregatedDiscountInfoV2: {
-          header: "60% OFF",
-          shortDescriptionList: [
-            {
-              meta: "Use TRYNEW",
-              discountType: "Percentage",
-              operationType: "RESTAURANT",
-            },
+          "costForTwo": 10000,
+          "costForTwoString": "₹100 FOR TWO",
+          "deliveryTime": 24,
+          "minDeliveryTime": 24,
+          "maxDeliveryTime": 24,
+          "slaString": "24 MINS",
+          "lastMileTravel": 4.599999904632568,
+          "slugs": {
+            "restaurant": "sri-veerabhadraswamy-tiffen-centre-kotitopu-kotitopu",
+            "city": "tumakuru"
+          },
+          "cityState": "208",
+          "address": "Sri Veerabhadraswamy tiffen centre,jaipura main road,Tumakuru",
+          "locality": "Jaipura Main Road",
+          "parentId": 342632,
+          "unserviceable": false,
+          "veg": false,
+          "select": false,
+          "favorite": false,
+          "tradeCampaignHeaders": [
+            
           ],
-          descriptionList: [
-            {
-              meta: "60% off up to ₹120 | Use code TRYNEW",
-              discountType: "Percentage",
-              operationType: "RESTAURANT",
-            },
+          "aggregatedDiscountInfo": {
+            "header": "15% off",
+            "shortDescriptionList": [
+              {
+                "meta": "15% off | Use TRYNEW",
+                "discountType": "Percentage",
+                "operationType": "RESTAURANT"
+              }
+            ],
+            "descriptionList": [
+              {
+                "meta": "15% off up to ₹45 | Use code TRYNEW",
+                "discountType": "Percentage",
+                "operationType": "RESTAURANT"
+              }
+            ],
+            "subHeader": "",
+            "headerType": 0,
+            "superFreedel": ""
+          },
+          "aggregatedDiscountInfoV2": {
+            "header": "15% OFF",
+            "shortDescriptionList": [
+              {
+                "meta": "Use TRYNEW",
+                "discountType": "Percentage",
+                "operationType": "RESTAURANT"
+              }
+            ],
+            "descriptionList": [
+              {
+                "meta": "15% off up to ₹45 | Use code TRYNEW",
+                "discountType": "Percentage",
+                "operationType": "RESTAURANT"
+              }
+            ],
+            "subHeader": "",
+            "headerType": 0,
+            "superFreedel": ""
+          },
+          "chain": [
+            
           ],
-          subHeader: "",
-          headerType: 0,
-          superFreedel: "",
+          "feeDetails": {
+            "fees": [
+              {
+                "name": "distance",
+                "fee": 1900,
+                "message": ""
+              },
+              {
+                "name": "time",
+                "fee": 0,
+                "message": ""
+              },
+              {
+                "name": "special",
+                "fee": 0,
+                "message": ""
+              }
+            ],
+            "totalFees": 1900,
+            "message": "",
+            "title": "Delivery Charge",
+            "amount": "1900",
+            "icon": ""
+          },
+          "availability": {
+            "opened": true,
+            "nextOpenMessage": "",
+            "nextCloseMessage": ""
+          },
+          "longDistanceEnabled": 0,
+          "rainMode": "NONE",
+          "thirdPartyAddress": false,
+          "thirdPartyVendor": "",
+          "adTrackingID": "",
+          "badges": {
+            "imageBased": [
+              
+            ],
+            "textBased": [
+              
+            ],
+            "textExtendedBadges": [
+              
+            ]
+          },
+          "lastMileTravelString": "4.5 kms",
+          "hasSurge": false,
+          "sla": {
+            "restaurantId": "568032",
+            "deliveryTime": 24,
+            "minDeliveryTime": 24,
+            "maxDeliveryTime": 24,
+            "lastMileTravel": 4.599999904632568,
+            "lastMileDistance": 0,
+            "serviceability": "SERVICEABLE",
+            "rainMode": "NONE",
+            "longDistance": "NOT_LONG_DISTANCE",
+            "preferentialService": false,
+            "iconType": "EMPTY"
+          },
+          "promoted": false,
+          "avgRating": "--",
+          "totalRatings": 0,
+          "new": false
         },
-        chain: [],
-        feeDetails: {
-          fees: [],
-          totalFees: 0,
-          message: "",
-          title: "",
-          amount: "",
-          icon: "",
-        },
-        availability: {
-          opened: true,
-          nextOpenMessage: "",
-          nextCloseMessage: "",
-        },
-        longDistanceEnabled: 0,
-        rainMode: "NONE",
-        thirdPartyAddress: false,
-        thirdPartyVendor: "",
-        adTrackingID: "",
-        badges: {
-          imageBased: [],
-          textBased: [],
-          textExtendedBadges: [],
-        },
-        lastMileTravelString: "3 kms",
-        hasSurge: false,
-        sla: {
-          restaurantId: "377944",
-          deliveryTime: 18,
-          minDeliveryTime: 18,
-          maxDeliveryTime: 18,
-          lastMileTravel: 3,
-          lastMileDistance: 0,
-          serviceability: "SERVICEABLE",
-          rainMode: "NONE",
-          longDistance: "NOT_LONG_DISTANCE",
-          preferentialService: false,
-          iconType: "EMPTY",
-        },
-        promoted: false,
-        avgRating: "3.6",
-        totalRatings: 100,
-        new: false,
+        "subtype": "basic"
       },
-      subtype: "basic",
+      "parentWidget": false
     },
     {
-      type: "restaurant",
-      data: {
-        type: "F",
-        id: "624058",
-        name: "Frozen Bottle - Milkshakes, Desserts And Ice Cream",
-        uuid: "63c2e018-66b7-4e02-8333-ce73cbc9d6b3",
-        city: "208",
-        area: "TUMKUR UNIVERSITY",
-        totalRatingsString: "50+ ratings",
-        cloudinaryImageId: "zjrzxesfj8emzsahn6xb",
-        cuisines: [
-          "Beverages",
-          "Desserts",
-          "Ice Cream",
-          "Waffle",
-          "Bakery",
-          "Healthy Food",
-        ],
-        tags: [],
-        costForTwo: 25000,
-        costForTwoString: "₹250 FOR TWO",
-        deliveryTime: 17,
-        minDeliveryTime: 17,
-        maxDeliveryTime: 17,
-        slaString: "17 MINS",
-        lastMileTravel: 1.100000023841858,
-        slugs: {
-          restaurant:
-            "frozen-bottle-milkshakes-desserts-and-ice-cream-hotel-sri-vigneshwara-comforts-kotitopu",
-          city: "tumakuru",
-        },
-        cityState: "208",
-        address:
-          'QUICK SERVICE RESTAURANT",TUMKUR UNIVERSITY,GROUND FLOOR,SHOP NO-1,HOTEL SRI VIGNESHWARA COMFORTS BENGALURU-HONNAVAR ROAD,NEAR ASHOK NAGAR, Tumkur, Karnataka-572102',
-        locality: "HOTEL SRI VIGNESHWARA COMFORTS",
-        parentId: 5655,
-        unserviceable: false,
-        veg: true,
-        select: false,
-        favorite: false,
-        tradeCampaignHeaders: [],
-        aggregatedDiscountInfo: {
-          header: "50% off",
-          shortDescriptionList: [
-            {
-              meta: "50% off | Use WELCOME50",
-              discountType: "Percentage",
-              operationType: "RESTAURANT",
-            },
+      "cardType": "restaurant",
+      "layoutAlignmentType": "VERTICAL",
+      "data": {
+        "type": "restaurant",
+        "data": {
+          "type": "F",
+          "id": "448043",
+          "name": "Rk Sweets",
+          "uuid": "eedbbd1b-0620-4ced-80a6-4103e9568d2e",
+          "city": "208",
+          "area": "Kotitopu",
+          "totalRatingsString": "Too Few Ratings",
+          "cloudinaryImageId": "g6c6wjueueugspecwvse",
+          "cuisines": [
+            "Sweets"
           ],
-          descriptionList: [
-            {
-              meta: "50% off up to ₹80 | Use code WELCOME50",
-              discountType: "Percentage",
-              operationType: "RESTAURANT",
-            },
+          "tags": [
+            
           ],
-          subHeader: "",
-          headerType: 0,
-          superFreedel: "",
-        },
-        aggregatedDiscountInfoV2: {
-          header: "50% OFF",
-          shortDescriptionList: [
-            {
-              meta: "Use WELCOME50",
-              discountType: "Percentage",
-              operationType: "RESTAURANT",
-            },
+          "costForTwo": 10000,
+          "costForTwoString": "₹100 FOR TWO",
+          "deliveryTime": 23,
+          "minDeliveryTime": 23,
+          "maxDeliveryTime": 23,
+          "slaString": "23 MINS",
+          "lastMileTravel": 3,
+          "slugs": {
+            "restaurant": "rk-sweets-kotitopu-kotitopu",
+            "city": "tumakuru"
+          },
+          "cityState": "208",
+          "address": "Aralepet main road, Tumkur-572101",
+          "locality": "Aralepet Main Road",
+          "parentId": 269845,
+          "unserviceable": false,
+          "veg": true,
+          "select": false,
+          "favorite": false,
+          "tradeCampaignHeaders": [
+            
           ],
-          descriptionList: [
-            {
-              meta: "50% off up to ₹80 | Use code WELCOME50",
-              discountType: "Percentage",
-              operationType: "RESTAURANT",
-            },
+          "chain": [
+            
           ],
-          subHeader: "",
-          headerType: 0,
-          superFreedel: "",
+          "feeDetails": {
+            "fees": [
+              {
+                "name": "distance",
+                "fee": 1400,
+                "message": ""
+              },
+              {
+                "name": "time",
+                "fee": 0,
+                "message": ""
+              },
+              {
+                "name": "special",
+                "fee": 0,
+                "message": ""
+              }
+            ],
+            "totalFees": 1400,
+            "message": "",
+            "title": "Delivery Charge",
+            "amount": "1400",
+            "icon": ""
+          },
+          "availability": {
+            "opened": false,
+            "nextOpenMessage": "Opens next at 9 am, today",
+            "nextCloseMessage": ""
+          },
+          "longDistanceEnabled": 0,
+          "rainMode": "NONE",
+          "thirdPartyAddress": false,
+          "thirdPartyVendor": "",
+          "adTrackingID": "",
+          "badges": {
+            "imageBased": [
+              
+            ],
+            "textBased": [
+              
+            ],
+            "textExtendedBadges": [
+              
+            ]
+          },
+          "lastMileTravelString": "3 kms",
+          "hasSurge": false,
+          "sla": {
+            "restaurantId": "448043",
+            "deliveryTime": 23,
+            "minDeliveryTime": 23,
+            "maxDeliveryTime": 23,
+            "lastMileTravel": 3,
+            "lastMileDistance": 0,
+            "serviceability": "SERVICEABLE",
+            "rainMode": "NONE",
+            "longDistance": "NOT_LONG_DISTANCE",
+            "preferentialService": false,
+            "iconType": "EMPTY"
+          },
+          "promoted": false,
+          "avgRating": "--",
+          "totalRatings": 0,
+          "new": false
         },
-        chain: [],
-        feeDetails: {
-          fees: [],
-          totalFees: 0,
-          message: "",
-          title: "",
-          amount: "",
-          icon: "",
-        },
-        availability: {
-          opened: true,
-          nextOpenMessage: "",
-          nextCloseMessage: "",
-        },
-        longDistanceEnabled: 0,
-        rainMode: "NONE",
-        thirdPartyAddress: false,
-        thirdPartyVendor: "",
-        adTrackingID: "",
-        badges: {
-          imageBased: [],
-          textBased: [],
-          textExtendedBadges: [],
-        },
-        lastMileTravelString: "1.1 kms",
-        hasSurge: false,
-        sla: {
-          restaurantId: "624058",
-          deliveryTime: 17,
-          minDeliveryTime: 17,
-          maxDeliveryTime: 17,
-          lastMileTravel: 1.100000023841858,
-          lastMileDistance: 0,
-          serviceability: "SERVICEABLE",
-          rainMode: "NONE",
-          longDistance: "NOT_LONG_DISTANCE",
-          preferentialService: false,
-          iconType: "EMPTY",
-        },
-        promoted: false,
-        avgRating: "4.3",
-        totalRatings: 50,
-        new: false,
+        "subtype": "basic"
       },
-      subtype: "basic",
+      "parentWidget": false
     },
+    {
+      "cardType": "restaurant",
+      "layoutAlignmentType": "VERTICAL",
+      "data": {
+        "type": "restaurant",
+        "data": {
+          "type": "F",
+          "id": "147967",
+          "name": "R.n.s Holige Mane",
+          "uuid": "ee9a4e35-fcb7-4cb3-a9b3-f9d4d918024e",
+          "city": "208",
+          "area": "Kotitopu",
+          "totalRatingsString": "100+ ratings",
+          "cloudinaryImageId": "kvxqm4g3cxhzc7q53cn8",
+          "cuisines": [
+            "South Indian",
+            "North Indian"
+          ],
+          "tags": [
+            
+          ],
+          "costForTwo": 20000,
+          "costForTwoString": "₹200 FOR TWO",
+          "deliveryTime": 23,
+          "minDeliveryTime": 23,
+          "maxDeliveryTime": 23,
+          "slaString": "23 MINS",
+          "lastMileTravel": 1.5,
+          "slugs": {
+            "restaurant": "rns-holige-mane-sit-main-road-kotitopu",
+            "city": "tumakuru"
+          },
+          "cityState": "208",
+          "address": "32nd Cross, Near Siddeshwar Convenience Hall, SIT Main Road, Tumkur, Tumkur Locality, Tumkur",
+          "locality": "SIT Main Road",
+          "parentId": 163898,
+          "unserviceable": false,
+          "veg": true,
+          "select": false,
+          "favorite": false,
+          "tradeCampaignHeaders": [
+            
+          ],
+          "chain": [
+            
+          ],
+          "feeDetails": {
+            "fees": [
+              {
+                "name": "distance",
+                "fee": 1400,
+                "message": ""
+              },
+              {
+                "name": "time",
+                "fee": 0,
+                "message": ""
+              },
+              {
+                "name": "special",
+                "fee": 0,
+                "message": ""
+              }
+            ],
+            "totalFees": 1400,
+            "message": "",
+            "title": "Delivery Charge",
+            "amount": "1400",
+            "icon": ""
+          },
+          "availability": {
+            "opened": false,
+            "nextOpenMessage": "Opens next at 9 am, today",
+            "nextCloseMessage": ""
+          },
+          "longDistanceEnabled": 0,
+          "rainMode": "NONE",
+          "thirdPartyAddress": false,
+          "thirdPartyVendor": "",
+          "adTrackingID": "",
+          "badges": {
+            "imageBased": [
+              
+            ],
+            "textBased": [
+              
+            ],
+            "textExtendedBadges": [
+              
+            ]
+          },
+          "lastMileTravelString": "1.5 kms",
+          "hasSurge": false,
+          "sla": {
+            "restaurantId": "147967",
+            "deliveryTime": 23,
+            "minDeliveryTime": 23,
+            "maxDeliveryTime": 23,
+            "lastMileTravel": 1.5,
+            "lastMileDistance": 0,
+            "serviceability": "SERVICEABLE",
+            "rainMode": "NONE",
+            "longDistance": "NOT_LONG_DISTANCE",
+            "preferentialService": false,
+            "iconType": "EMPTY"
+          },
+          "promoted": false,
+          "avgRating": "3.0",
+          "totalRatings": 100,
+          "new": false
+        },
+        "subtype": "basic"
+      },
+      "parentWidget": false
+    },
+    {
+      "cardType": "restaurant",
+      "layoutAlignmentType": "VERTICAL",
+      "data": {
+        "type": "restaurant",
+        "data": {
+          "type": "F",
+          "id": "615181",
+          "name": "Gk's Holige Mane",
+          "uuid": "9eeaed19-74d1-43fd-9d8a-9eee8d215290",
+          "city": "208",
+          "area": "Kotitopu",
+          "totalRatingsString": "20+ ratings",
+          "cloudinaryImageId": "f68i51pvxurhbjxt6e7r",
+          "cuisines": [
+            "Sweets",
+            "Beverages"
+          ],
+          "tags": [
+            
+          ],
+          "costForTwo": 9900,
+          "costForTwoString": "₹99 FOR TWO",
+          "deliveryTime": 25,
+          "minDeliveryTime": 25,
+          "maxDeliveryTime": 25,
+          "slaString": "25 MINS",
+          "lastMileTravel": 1.399999976158142,
+          "slugs": {
+            "restaurant": "gk's-holige-mane-kotitopu-kotitopu",
+            "city": "tumakuru"
+          },
+          "cityState": "208",
+          "address": "SIT Main Road, opposite Siddheshwara Convention Hall, Ashok Nagar, Tumakuru, Karnataka 572102, India",
+          "locality": "SIT Main Road",
+          "parentId": 366793,
+          "unserviceable": false,
+          "veg": true,
+          "select": false,
+          "favorite": false,
+          "tradeCampaignHeaders": [
+            
+          ],
+          "aggregatedDiscountInfo": {
+            "header": "Free Chakkuli",
+            "shortDescriptionList": [
+              {
+                "meta": "Free Chakkuli on orders above ₹300",
+                "discountType": "Freebie",
+                "operationType": "RESTAURANT"
+              }
+            ],
+            "descriptionList": [
+              {
+                "meta": "Free Chakkuli on orders above ₹300",
+                "discountType": "Freebie",
+                "operationType": "RESTAURANT"
+              }
+            ],
+            "subHeader": "",
+            "headerType": 0,
+            "superFreedel": ""
+          },
+          "aggregatedDiscountInfoV2": {
+            "header": "",
+            "shortDescriptionList": [
+              {
+                "meta": "Free Chakkuli",
+                "discountType": "Freebie",
+                "operationType": "RESTAURANT"
+              }
+            ],
+            "descriptionList": [
+              {
+                "meta": "Free Chakkuli on orders above ₹300",
+                "discountType": "Freebie",
+                "operationType": "RESTAURANT"
+              }
+            ],
+            "subHeader": "",
+            "headerType": 0,
+            "superFreedel": ""
+          },
+          "chain": [
+            
+          ],
+          "feeDetails": {
+            "fees": [
+              {
+                "name": "distance",
+                "fee": 1400,
+                "message": ""
+              },
+              {
+                "name": "time",
+                "fee": 0,
+                "message": ""
+              },
+              {
+                "name": "special",
+                "fee": 0,
+                "message": ""
+              }
+            ],
+            "totalFees": 1400,
+            "message": "",
+            "title": "Delivery Charge",
+            "amount": "1400",
+            "icon": ""
+          },
+          "availability": {
+            "opened": false,
+            "nextOpenMessage": "Opens next at 9 am, today",
+            "nextCloseMessage": ""
+          },
+          "longDistanceEnabled": 0,
+          "rainMode": "NONE",
+          "thirdPartyAddress": false,
+          "thirdPartyVendor": "",
+          "adTrackingID": "",
+          "badges": {
+            "imageBased": [
+              
+            ],
+            "textBased": [
+              
+            ],
+            "textExtendedBadges": [
+              
+            ]
+          },
+          "lastMileTravelString": "1.3 kms",
+          "hasSurge": false,
+          "sla": {
+            "restaurantId": "615181",
+            "deliveryTime": 25,
+            "minDeliveryTime": 25,
+            "maxDeliveryTime": 25,
+            "lastMileTravel": 1.399999976158142,
+            "lastMileDistance": 0,
+            "serviceability": "SERVICEABLE",
+            "rainMode": "NONE",
+            "longDistance": "NOT_LONG_DISTANCE",
+            "preferentialService": false,
+            "iconType": "EMPTY"
+          },
+          "promoted": false,
+          "avgRating": "3.9",
+          "totalRatings": 20,
+          "new": false
+        },
+        "subtype": "basic"
+      },
+      "parentWidget": false
+    }
   ];
+
