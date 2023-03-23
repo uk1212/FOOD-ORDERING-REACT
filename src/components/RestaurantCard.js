@@ -9,7 +9,7 @@ const RestaurantCard=({name,cuisines,cloudinaryImageId,lastMileTravelString})=>{
         <h2>{name}</h2>
         {/* <h4>{cuisines&&cuisines.join(",")}</h4> */}
         <h4>{cuisines&&cuisines.join(",")}</h4>
-        <h4>{lastMileTravelString} minutes</h4>
+        <h4>{lastMileTravelString} </h4>
       </div>
     );
   };
