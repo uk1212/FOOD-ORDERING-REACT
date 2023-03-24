@@ -3,27 +3,18 @@ import { Link } from "react-router-dom";
 import { restaurantList } from "../constants";
 import RestaurantCard from "./RestaurantCard";
 import Shimmer from "./Shimmer";
+import { filterData } from "../utils/Helper";
 
-function filterData(searchText, restaurants) {
-  const filteredData = restaurants.filter((restaurant) =>
-    restaurant?.data?.name?.toLowerCase().includes(searchText?.toLowerCase())
-  );
-  return filteredData;
-}
 
 const Body = () => {
   const [allRestaurants, setAllRestaurants] = useState([]);
   const [filteredRestaurants, setFilteredRestaurants] = useState([]);
-
-  //searchText is a local state variable
   const [searchText, setSeacrchText] = useState(); //To create state variable
-
   //callback and dependency array-->2 params
   useEffect(() => {
     //API call
     getRestaurants();
   }, []);
-
   async function getRestaurants() {
     const data = await fetch(
       "https://www.swiggy.com/dapi/restaurants/list/v5?lat=13.3314163&lng=77.1283821&page_type=DESKTOP_WEB_LISTING"
@@ -35,10 +26,8 @@ const Body = () => {
   }
 
   console.log("render()");
-
   //Conditional rendering
-
-  if (allRestaurants.length != 0 && filteredRestaurants.length === 0)
+  if (allRestaurants?.length != 0 && filteredRestaurants?.length === 0)
     return <h1>No restaurants found!!!</h1>;
 
   return allRestaurants?.length === 0 ? (
@@ -67,7 +56,7 @@ const Body = () => {
         </button>
       </div>
       <div className="restaurant-list">
-        {filteredRestaurants.map((restaurant) => {
+        {filteredRestaurants?.map((restaurant) => {
           return (
             <Link
               to={"/restaurant/" + restaurant.data.id}
