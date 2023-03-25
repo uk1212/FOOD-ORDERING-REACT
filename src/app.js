@@ -1,4 +1,4 @@
-import React, { lazy, Suspense } from "react";
+import React, { lazy, Suspense, useState } from "react";
 import ReactDOM from "react-dom/client";
 //Default import //Named Import
 import Header from "./components/Header";
@@ -11,6 +11,7 @@ import Contact from "./components/Contact";
 import RestaurantMenu from "./components/RestaurantMenu";
 import Profile from "./components/Profile";
 import Shimmer from "./components/Shimmer";
+import UserContext from "./utils/UserContext";
 // import Instamart from "./components/Instamart";
 
 //Chunking
@@ -37,11 +38,23 @@ const About = lazy(() => import("./components/About"));
 // 2. Class Component
 // React.Fragment
 const AppLayout = () => {
+
+  const [user,setUser]=useState({
+    name: "Utkarsh",
+    email:"utkarsh.gmail.com"
+  });
+
   return (
     <>
+    <UserContext.Provider
+    value={{
+      user:user,
+      setUser: setUser,
+    }}>
       <Header />
       <Outlet />
       <Footer />
+    </UserContext.Provider>
     </>
   );
 };

@@ -1,7 +1,8 @@
-import { useState } from "react";
+import { useState,useContext  } from "react";
 import logo from "../assets/img/download (1).jpeg";
 import { Link } from "react-router-dom";
 import useOnline from "../utils/useOnline";
+import UserContext from "../utils/UserContext";
 
 const loggedInUser = () => {
   //API call to check authentication
@@ -24,6 +25,7 @@ const Title = () => (
 const Header = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const isOnline = useOnline();
+  const {user}=useContext(UserContext);
   return (
     <div className="flex justify-between bg-pink-50 shadow-lg sm:bg-blue-50 p-2">
       <Title />
@@ -45,7 +47,8 @@ const Header = () => {
           <li className=" px-2">Cart</li>
         </ul>
       </div>
-      <div>{isOnline ? "🟢" : "😡"}</div>
+      <span>{isOnline ? "🟢" : "😡"}</span>
+     <span className="p-10 fond text-red-800"> {user.name}</span>
       {!isLoggedIn ? (
         <button onClick={() => setIsLoggedIn(true)}>Login</button>
       ) : (

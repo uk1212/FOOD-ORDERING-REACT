@@ -1,15 +1,18 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
 import { restaurantList } from "../constants";
 import RestaurantCard from "./RestaurantCard";
 import Shimmer from "./Shimmer";
 import { filterData } from "../utils/Helper";
 import useOnline from "../utils/useOnline";
+import UserContext from "../utils/UserContext";
+
 
 const Body = () => {
   const [allRestaurants, setAllRestaurants] = useState([]);
   const [filteredRestaurants, setFilteredRestaurants] = useState([]);
   const [searchText, setSeacrchText] = useState(); //To create state variable
+  const {user,setUser}=useContext(UserContext);
   //callback and dependency array-->2 params
   useEffect(() => {
     //API call
@@ -59,6 +62,20 @@ const Body = () => {
         >
           Search
         </button>
+        <input value={user.name} onChange={
+          (e)=>setUser({
+            ...user,
+            name: e.target.value,
+            // email: "newemail@gmail.com"
+          })
+        }></input>
+        <input value={user.email} onChange={
+          (e)=>setUser({
+            // name: e.target.value,
+            ...user,
+            email: e.target.value
+          })
+        }></input>
       </div>
       <div className="flex flex-wrap text-left bg-gray-50">
         {filteredRestaurants?.map((restaurant) => {
