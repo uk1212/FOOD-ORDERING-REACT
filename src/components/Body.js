@@ -4,7 +4,7 @@ import { restaurantList } from "../constants";
 import RestaurantCard from "./RestaurantCard";
 import Shimmer from "./Shimmer";
 import { filterData } from "../utils/Helper";
-
+import useOnline from "../utils/useOnline";
 
 const Body = () => {
   const [allRestaurants, setAllRestaurants] = useState([]);
@@ -25,6 +25,11 @@ const Body = () => {
     setFilteredRestaurants(json?.data?.cards[2]?.data?.data?.cards);
   }
 
+  const isOnline = useOnline();
+  if (!isOnline) {
+    return <h1>Offline please check your internet connection!!</h1>;
+  }
+
   console.log("render()");
   //Conditional rendering
   if (allRestaurants?.length != 0 && filteredRestaurants?.length === 0)
@@ -34,10 +39,10 @@ const Body = () => {
     <Shimmer />
   ) : (
     <>
-      <div className="search-container">
+      <div className=" p-5 bg-pink-50 my-5">
         <input
           type="text"
-          className="search-input"
+          className="focus:bg-green-50 p-2"
           placeholder="search"
           value={searchText}
           onChange={(e) => {
@@ -45,7 +50,7 @@ const Body = () => {
           }}
         />
         <button
-          className="search-btn"
+          className=" m-1 bg-purple-900 text-white rounded-md p-2 hover:bg-black"
           onClick={() => {
             //Need to filter the data
             const data = filterData(searchText, allRestaurants);
@@ -55,7 +60,7 @@ const Body = () => {
           Search
         </button>
       </div>
-      <div className="restaurant-list">
+      <div className="flex flex-wrap text-left bg-gray-50">
         {filteredRestaurants?.map((restaurant) => {
           return (
             <Link

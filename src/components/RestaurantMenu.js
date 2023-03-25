@@ -13,7 +13,7 @@ const RestaurantMenu = () => {
   
 
   return (
-    <div className="menu"> 
+    <div className="flex flex-wrap p-3 justify-between"> 
       <div>
         <h1>Restaurant id: {id}</h1>
         {/* <h2>{restaurant?.cards[0]?.card?.card?.info?.name}</h2> */}
@@ -26,7 +26,7 @@ const RestaurantMenu = () => {
         <img src={IMG_CDN_URL + restaurant?.cloudinaryImageId} />
       </div>
       <div >
-        <h1>Menu</h1>
+        <h1 className="font-bold text-lg">Menu</h1>
         <ul>
           {Object.values(menuDetails?.data?.menu?.items).map((item) => (
             <li key={item.id}> {item?.name}</li>
