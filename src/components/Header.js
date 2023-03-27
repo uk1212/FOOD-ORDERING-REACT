@@ -1,8 +1,9 @@
-import { useState,useContext  } from "react";
+import { useState, useContext } from "react";
 import logo from "../assets/img/download (1).jpeg";
 import { Link } from "react-router-dom";
 import useOnline from "../utils/useOnline";
 import UserContext from "../utils/UserContext";
+import { useSelector } from "react-redux";
 
 const loggedInUser = () => {
   //API call to check authentication
@@ -25,7 +26,13 @@ const Title = () => (
 const Header = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const isOnline = useOnline();
-  const {user}=useContext(UserContext);
+  const { user } = useContext(UserContext);
+
+  const cartItems = useSelector((store) => store.cart.items);
+  console.log(cartItems);
+
+  // console.log(cartItems.length);
+
   return (
     <div className="flex justify-between bg-pink-50 shadow-lg sm:bg-blue-50 p-2">
       <Title />
@@ -44,11 +51,13 @@ const Header = () => {
           <li className=" px-2">
             <Link to="/instamart">Instamart </Link>
           </li>
-          <li className=" px-2">Cart</li>
+          <li className=" px-2">
+            <Link to="/cart">Cart- {cartItems.length} items</Link>
+          </li>
         </ul>
       </div>
       <span>{isOnline ? "🟢" : "😡"}</span>
-     <span className="p-10 fond text-red-800"> {user.name}</span>
+      <span className="p-10  text-red-800"> {user.name}</span>
       {!isLoggedIn ? (
         <button onClick={() => setIsLoggedIn(true)}>Login</button>
       ) : (

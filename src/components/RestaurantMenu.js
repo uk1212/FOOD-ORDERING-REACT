@@ -4,16 +4,22 @@ import { IMG_CDN_URL } from "../constants";
 import useRestaurant from "../utils/useRestaurant";
 import useMenu from "../utils/useMenu";
 import Shimmer from "./Shimmer";
+import { addItem } from "../utils/cartSlice";
+import { useDispatch } from "react-redux";
 const RestaurantMenu = () => {
   const { id } = useParams();
-  const restaurant=useRestaurant(id);
-  const menuDetails=useMenu(id);
+  const restaurant = useRestaurant(id);
+  const menuDetails = useMenu(id);
+  const dispatch = useDispatch();
 
-  if(!restaurant)return <Shimmer/>;
-  
+  const addFoodItem = (item) => {
+    dispatch(addItem(item));
+  };
+
+  if (!restaurant) return <Shimmer />;
 
   return (
-    <div className="flex flex-wrap p-3 justify-between"> 
+    <div className="flex flex-wrap p-2 m-2 justify-between">
       <div>
         <h1>Restaurant id: {id}</h1>
         {/* <h2>{restaurant?.cards[0]?.card?.card?.info?.name}</h2> */}
@@ -25,13 +31,17 @@ const RestaurantMenu = () => {
         <h2>{restaurant?.costForTwoMsg}</h2>
         <img src={IMG_CDN_URL + restaurant?.cloudinaryImageId} />
       </div>
-      <div >
+     
+      <div className="p-5">
         <h1 className="font-bold text-lg">Menu</h1>
         <ul>
           {Object.values(menuDetails?.data?.menu?.items).map((item) => (
-            <li key={item.id}> {item?.name}</li>
+            <li key={item.id}> {item?.name} -{<button className=" p-2 m-2 bg-green-100" 
+            onClick={()=>addFoodItem(item)}>
+              Add</button>}</li>
+            // <button p-2 m-2 >Add</button>
           ))}
-          {console.log(menuDetails)}
+          {/* {console.log(menuDetails)} */}
         </ul>
       </div>
     </div>
