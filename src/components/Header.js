@@ -15,6 +15,7 @@ const loggedInUser = () => {
 const Title = () => (
   <a href="/">
     <img
+    data-testid="logo"
       className="h-28 "
       alt="logo"
       // src="https://yt3.googleusercontent.com/ytc/AL5GRJXudT76175T4x4n7eslWM1YkgNLHDSSqfXGoadl=s900-c-k-c0x00ffffff-no-rj"
@@ -29,7 +30,7 @@ const Header = () => {
   const { user } = useContext(UserContext);
 
   const cartItems = useSelector((store) => store.cart.items);
-  console.log(cartItems);
+  // console.log(cartItems);
 
   // console.log(cartItems.length);
 
@@ -51,12 +52,12 @@ const Header = () => {
           <li className=" px-2">
             <Link to="/instamart">Instamart </Link>
           </li>
-          <li className=" px-2">
+          <li className=" px-2" data-testid="cart">
             <Link to="/cart">Cart- {cartItems.length} items</Link>
           </li>
         </ul>
       </div>
-      <span>{isOnline ? "🟢" : "😡"}</span>
+      <span data-testid="online-status">{isOnline ? "🟢" : "😡"}</span>
       <span className="p-10  text-red-800"> {user.name}</span>
       {!isLoggedIn ? (
         <button onClick={() => setIsLoggedIn(true)}>Login</button>

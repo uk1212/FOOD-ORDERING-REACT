@@ -18,17 +18,6 @@ const useRestaurant = (id) => {
     // console.log(json);
     setRestaurant(json?.data?.cards[0]?.card?.card?.info);
   }
-  async function getMenuDetails() {
-    const data = await fetch(
-      "  https://www.swiggy.com/dapi/menu/quick?menuId=" +
-        id +
-        "&categories=true"
-    );
-    const json = await data.json();
-    // console.log(json);
-    setMenuDetails(json);
-  }
-  //  return restaurant data
 
   return restaurant;
 };

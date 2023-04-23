@@ -16,7 +16,7 @@ const useMenu = (id) => {
     const json = await data.json();
     setMenuDetails(json);
   }
-  //  return menu data
+
   return menuDetails;
 };
 
